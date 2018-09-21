@@ -1,0 +1,60 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+		#wrap{
+			position: relative;
+			width: 590px;
+			height: 470px;
+			box-shadow: 0 0 9px #222;
+			margin: 100px auto;
+		}
+		#wrap ul.pic li{
+			display: none;
+			position: absolute;
+			width: 590px;
+			height: 470px;
+
+		}
+		#wrap ul.lib {
+			display: flex;/*弹性盒模型*/
+			justify-content: space-around;/*横向，环绕均分*/
+			align-items: center;/*纵向排列居中*/
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 120px;
+			height: 20px;
+			background:rgba(255,255,255,0.5);
+			border-radius: 10px;
+		}
+		#wrap ul.lib li{
+			width: 10px;
+			height: 10px;
+			background:#fff;
+			border-radius: 50%;
+		}
+		#wrap ul.lib li.on{
+			background: red;
+		}
+		#wrap ul.btn li{
+			position: absolute;
+			top: 50%;
+			margin-top: -40px;
+			width: 40px;
+			height: 80px;
+			background:rgba(0,0,0,0.5);
+			font-size: 30px;
+			color: #fff;
+			text-align: center;
+			line-height: 80px;
+			cursor: pointer;/*改为可点击*/}
+
+		#wrap ul.btn li.next{
+
+			right:  0;}
